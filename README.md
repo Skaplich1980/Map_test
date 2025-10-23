@@ -19,7 +19,7 @@
 ## Установка и запуск
 
 ### 1. Клонирование репозитория
-git clone https://github.com/Skaplich1980/Map_test
+git clone https://github.com/Skaplich1980/Map_test.git
 cd map-test
 2. Создание виртуального окружения
 bash
