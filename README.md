@@ -16,11 +16,9 @@
 - Автогенерация схемы API и документации (Swagger, Redoc)
 
 ---
-
 ## Установка и запуск
 
 ### 1. Клонирование репозитория
-```bash
 git clone https://github.com/Skaplich1980/Map_test
 cd map-test
 2. Создание виртуального окружения
@@ -44,6 +42,13 @@ DB_PASSWORD=secret
 DB_HOST=localhost
 DB_PORT=5432
 ALLOWED_HOSTS=localhost,127.0.0.1
+
+БД с примерами !
+db.sqlite3  
+пользователь:root
+пароль:admin
+если оставляем, то шаги 5-6 можно пропустить
+
 5. Применение миграций
 bash
 python manage.py migrate
@@ -57,56 +62,38 @@ python manage.py runserver
 JWT авторизация
 
 POST /api/token/ — получить токен
-
 POST /api/token/refresh/ — обновить токен
-
 Места
-
 GET /api/places/ — список мест
-
 POST /api/places/ — создать место
-
 GET /api/places/{id}/ — детально
-
 GET /api/places/geojson/ — все места в формате GeoJSON
-
 Фотографии
-
 GET /api/photos/ — список фото
-
 POST /api/photos/ — загрузка фото
-
-?? Документация API
+Документация API
 Swagger UI: http://localhost:8000/api/docs/
-
 Redoc: http://localhost:8000/api/redoc/
-
 JSON-схема: http://localhost:8000/api/schema/
-
-??? Админка
+Админка
 URL: http://localhost:8000/admin/
 
 Возможности:
-
 Inline-редактирование фотографий
-
 Drag-and-drop сортировка фото
-
 Превью изображений
-
 Редактор CKEditor 5 для описаний мест
 
-?? Статика и медиа
+Статика и медиа
 Статические файлы: /static/
-
 Медиафайлы (загруженные фото): /media/
 
-?? TODO / Дальнейшие шаги
 Деплой на pythonanywhere / другой хостинг
+
 
 Добавление команды load_place <url> для импорта данных
 
 Загрузка тестовых данных для демонстрации
 
-?? Лицензия
+Лицензия
 MIT License
